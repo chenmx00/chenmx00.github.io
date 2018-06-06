@@ -1,0 +1,120 @@
+<!Doctype HTML>
+<html lang="en">
+<head>
+	<!-- Some important stuff -->
+	<meta charset="UTF-8"> 
+
+	<!-- Specify a launch screen image that is displayed while your web application launches. Replace app.png with your image file path -->
+	<!-- <link rel="apple-touch-startup-image" href="assets/images/loading.svg"> -->
+
+	<!-- Mobile Internet Explorer allows us to activate ClearType technology for smoothing fonts for easy reading -->
+	<meta http-equiv="cleartype" content="on">
+	<!-- Changes the logical window size used when displaying a page mobile browsers -->
+	<meta name = "viewport" content = "width = device-width, initial-scale=1">
+	
+	<script src="https://code.jquery.com/jquery-latest.js"></script>
+
+	<title> Minxing Chen </title>
+
+	<!-- Favcon -->
+	<link rel="icon" type="image/png" href="assets/images/e.png">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+	<!-- Style -->
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	<section id="menu">
+		<ul>
+		  <li><a class="left-nav" id="nav-4"><img src="assets/images/e.png" id="e"></a></li>
+		  <li><a class="right-nav" id="nav-3">Contact Me!</a></li>
+		  <li><a class="right-nav" id="nav-2">My Works</a></li>
+		  <li><a class="right-nav" id="nav-1">About</a></li>
+		</ul>
+	</section>
+
+	<!-- Video Background --> 
+	<section id="header">
+      <video autoplay muted loop poster="bg1.png" id="bgvid">
+	      <source src="bg1.mp4" type="video/mp4">
+      </video>
+        <div class="middle" id="logo">
+            <img class="fade-in top" src="assets/images/logo.svg">
+			<a href="#"><img class="fade-in bottom" id="downarrow" src="assets/images/downarrow.png"></a>
+			<a href="#"><img class="fade-in bottom" id="downarrow2" src="assets/images/downarrow.png"></a>
+        </div>
+	</section>
+
+	<br/>
+	<br/>
+
+	<div id="about" class="paddy">
+		<p class="div-head"> Hello! I am a dick</p><br><br>
+		<sectioin class="container">
+			<div id="about-text">
+				<p class="reg-size"> An avid programmer - I love coding! Proficient in Python, Java, JavaScript
+				<br>Frameworks: Django, *Node, *React; &nbsp; Working profiency in SQL</p>
+				<p class="reg-size"> An inspired designer - Click Here </p>
+				<p class="reg-size"> An adventure seeker - Next travel destinations: Taiwan and Singapore </p>
+				<p class="reg-size"> A passionate educator - I love teaching!<br> This summer: CS 61A Undergraduate Student Instructor </p>
+			</div>
+			<div id="about-img"><img src="assets/images/me.jpg" width="30%" height="30%"></div>
+		</sectioin>
+	</div>
+
+	<div id="resume" class="paddy">
+		<p class="div-head"> Experiences </p>
+		<button onclick="openNewTab('assets/static/resume.pdf')"> VIEW RESUME </button>
+	</div>
+
+	<div id="works" class="paddy">
+		<p class="div-head"> Projects </p>
+		<br><br><br><br>
+		<div class="projects">
+			<!-- Bear Map -->
+			<div class="blurred"><img src="assets/images/bearmap.gif"><h3>Bear Map: <br>Google Maps like site<br><br><i>Backend: Java</i></h3></div> &nbsp;&nbsp;&nbsp;
+			
+			<!-- BYOG -->
+			<div class="blurred"><img src="assets/images/byog.gif"><h3>World Generation Game<br><br><i>Java</i></h3></div> &nbsp;&nbsp;&nbsp;
+			
+			<!-- CodeDoor -->
+			<div class="blurred"><a href="#" onclick="openNewTab('http://codedoordev.herokuapp.com/codedoor/home')"><img src="assets/images/codedoor.png"><h3>Codor --- Glassdoor for club members<br><br><i>Django, JavaScript, AWS S3<br> Slack API, PostgreSQL, HTML/CSS</i></h3></a></div> &nbsp;&nbsp;&nbsp;
+			
+			<!-- Ants -->
+			<div class="blurred"><img src="assets/images/ants.png"><h3>Ants<br>A game similar to<br>Plants vs Zombies<br><br><i>Backend: Python</i></h3></div> &nbsp;&nbsp;&nbsp;
+			
+			<!-- Asteroid Game -->
+			<div class="blurred"><a href="#" onclick="openNewTab('https://ekwkk.github.io/AsteroidsGame/')"><img src="assets/images/aster.gif"></a><h3>Asteroid Game<br><br><i>Java</i></h3></div> &nbsp;&nbsp;&nbsp;
+			
+			<!-- Minesweeper -->
+			<div class="blurred"><a href="#" onclick="openNewTab('https://ekwkk.github.io/Minesweeper/')"><img src="assets/images/minesweeper.gif"><h3>Minesweeper<br><br><i>Java</i></h3></a></div> &nbsp;&nbsp;&nbsp;
+			
+			<!-- Scheme -->
+			<div class="blurred"><img src="assets/images/scheme.png"><h3>Scheme Interpreter <br><br><i>Built using Python</i></h3></div> &nbsp;&nbsp;&nbsp;
+			
+			<!-- Upstanders -->
+			<div class="blurred"><a href="#" onclick="openNewTab('https://ekwkk.github.io/')"><img src="assets/images/chimehack.png"><h3>Upstanders<br>ChimeHack Twitter<br> Citizenship Award<br><br><i>JavaScript, HTML/CSS, Bootstrap</i></h3></a></div> &nbsp;&nbsp;&nbsp;
+			
+			<!-- Site -->
+			<div class="blurred"><a href="#" onclick="openNewTab('https://ekwkk.github.io/me/')"><img src="assets/images/mysite.png"><h3>_me_<br><br><i>JavaScript, HTML/CSS</i></h3></a></div> &nbsp;&nbsp;&nbsp;
+			
+		</div>
+	</div>
+
+	<section id="contact">
+		<div id="contact-info">
+			<a href="https://www.linkedin.com/in/erica-kong-085169a1/"><img src="assets/images/linkedin.png" class="c-pic"></a>
+			<a href="https://github.com/chenmx00"><img src="assets/images/github.svg" class="c-pic"></a>
+			<p>ericakong0331@gmail.com</p>
+			<p>waikeikong@berkeley.edu</p>
+			<p>415 - 646 - 6727</p>
+		</div>
+	</section>
+	
+	<script src="assets/scripts/main.js"></script>
+</body>
+</html>
