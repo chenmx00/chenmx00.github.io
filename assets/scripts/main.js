@@ -15,7 +15,7 @@ function openNewTab(url) {
 			}
 		});
 	});
-})(jQuery);
+})(jQuery)
 
 
 $("#downarrow").click(function() {
